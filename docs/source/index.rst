@@ -87,6 +87,18 @@ Group members:
 ====================
 | System downtime less than 30 minutes per year. Because too much system downtime will affect using, Greatly reducing the UE (user experience), thus reducing the rate of return.
 |
+5. Change cases
+==================
+|
+6. Milestones
+==================
+|
+7. Appendices
+==================
+|
+8. References
+==================
+|
 
 
 
