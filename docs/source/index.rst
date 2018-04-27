@@ -10,9 +10,15 @@ Software Requirements Specification for OMG Version 0.1
    :maxdepth: 2
    :caption: Contents:
    
-   Introduction
-   Functional requirements
-   Non-functional requirements
+Group information
+=================
+Group name
+-----------------
+Burning-burning
+|
+Group members:
+1. 石洪霞(Sherry 201632120113): 1054689185@qq.com
+2. 刘会翠(Sally 201632120111): 572931147@qq.com
 
 
 
