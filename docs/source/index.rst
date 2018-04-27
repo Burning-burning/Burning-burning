@@ -9,9 +9,9 @@ Welcome to SRS's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-<p>Burning-burning</p>
-<p>Shi Hongxia, 201632120113</p>
+   
+:duref:`ref <paragraphs>`Burning-burning
+:duref:`ref <paragraphs>`<p>Shi Hongxia, 201632120113</p>
 <p>Liu Huicui, 201632120111</p>
 Indices and tables
 ==================
