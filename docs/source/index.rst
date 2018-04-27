@@ -10,8 +10,9 @@ Welcome to SRS's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-ggggggggg
-
+group name: Burning-burning
+group members: Shi Hongxia(201632120113)
+               Liu Huicui(201632120111)
 Indices and tables
 ==================
 
