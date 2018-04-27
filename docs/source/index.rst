@@ -11,7 +11,7 @@ Welcome to SRS's documentation!
    :caption: Contents:
 
 group name: Burning-burning
-group members: Shi Hongxia(201632120113)
+:group members: Shi Hongxia(201632120113)
                Liu Huicui(201632120111)
 Indices and tables
 ==================
