@@ -4,14 +4,11 @@
    contain the root `toctree` directive.
 
 Welcome to SRS's documentation!
-=================================
+===============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   Group name: Burning-burning
-   Group members: Shi Hongxia(201632120113) 
-   
 
 
 
