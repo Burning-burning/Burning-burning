@@ -29,6 +29,18 @@ Overview
 | Input the detailed information and parameters of the patient's target cells in the software to map out the patient's target cells, and match the better gene therapy sequence by simulating the survival of the patient's target cells.
 User characteristics
 ------------------
+| end-users: Medical researcher、Health Committee
+| web site maintainers: Programmer
+Conventions
+------------------
+| 1. Users must be registered with professional doctor's qualification certificate and real name authentication of identity card, and must pass the certification of Health Protection Committee.
+| 2. Users must protect the privacy of patients unconditionally, and must comply with the wishes of patients, that is, whether they agree to use this software to find suitable gene sequences.
+Terminology and Glossary
+------------------
+1. gene therapy
+2. clinical trials
+3. professional doctor's qualification certificate
+4. Health Committee
 
 
 ==================
