@@ -47,8 +47,8 @@ Group members:
 |
 1.4.2 Acronyms
 >>>>>>>>>>>>>>>>>
-| OMG-Oh My Genes, that is, the peroject name.
-| 
+| OMG - Oh My Genes, that is, the peroject name.
+| logFC - log fold change of gene expression.  log_2 [T/C], where T is the gene expression level from a treatment sample, while C is the gene expression level from a control sample.
 
 
 ==================
