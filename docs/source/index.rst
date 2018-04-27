@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SRS's documentation!
+"Software Requirements Specification for OMG Version 0.1
 ===============================
 
 .. toctree::
@@ -15,6 +15,7 @@ Welcome to SRS's documentation!
 | Shi Hongxia(201632120113)
 |
 | Liu Huicui(201632120111)
+|
 | 27 April 2018
 |
 | This document describes the Little Hill Lab's initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes.  
