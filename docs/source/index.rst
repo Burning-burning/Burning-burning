@@ -61,7 +61,7 @@ Group members:
 2. Functional requirements
 ===========================
 +---------------+---------------+---------------+
-|    gene_id	   ControlSample	 KnockOutSample|
+|    gene_id	 | ControlSample | KnockOutSample|
 +===============+===============+===============+
 |   AT1G01010	 |  1.198558083  |	2.036161827 |
 +---------------+---------------+---------------+
