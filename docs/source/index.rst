@@ -212,8 +212,8 @@ Group members:
 |4.28        |  Analyze the functional requirements and non-functional requirements of the project     |
 +            +-----------------------------------------------------------------------------------------+
 |            |   image some improvements of the project                                                |
--------------+-----------------------------------------------------------------------------------------+
-             
++------------+-----------------------------------------------------------------------------------------+
+|             
 8. References
 ==================
 | 1. ReStructuredText (RST) quick introduction grammar: 
