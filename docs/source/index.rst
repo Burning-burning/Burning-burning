@@ -86,13 +86,19 @@ Group members:
 -----------------------
 | The web application displays a table and a scatter plot given a gene expression file.
 |
+2.2.1 Table
+>>>>>>>>>>>
 | The table contains a list of differentially expressed genes with the following format:
 =============== =============== =============== ===============
     gene_id      control_sample   treat_sample      log_2[FC]
 =============== =============== =============== ===============
    AT1G01010      1.198558083      2.036161827        0.76
 =============== =============== =============== ===============
-|hjgdjhgkiuo
+|
+2.2.2 Scatter plot
+>>>>>>>>>>>>>>>>>>>>>
+| The scatter plot displays differentially expressed genes.  The X-axis is Control, and Y-axis is Treatment.
+|
  .. image:: /image/scatter_plot.png
 
 
@@ -115,6 +121,8 @@ Group members:
 |
 3.4 Availability
 -----------------
+| We must always consider the fault, consider how to expand, mitigate risk, monitor availability, Respond to usability problems in a predictive and determined way.
+|
 3.4.1 Always consider the fault
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 | The web application will always consider the response to the fault. For example, capturing the underlying exception, retrying logic, and circuit breakers, the circuit breaker mode is very useful in handling dependent failures, because they can reduce the impact of dependent failures on the system.
@@ -192,6 +200,20 @@ Group members:
 7. Appendices
 ==================
 |
+============ ==================================================
+Date           Change Log
+============ ==================================================
+4.27           A brief introduction to the web application
+             ---------------------------------------------------
+               Analysis of the constraints faced by the project
+             ---------------------------------------------------  
+               A milestone in the development of a project
+------------ ---------------------------------------------------
+4.28           Analyze the functional requirements and non-functional requirements of the project
+             -------------------------------------------------------------------------------------
+               image some improvements of the project
+------------ ---------------------------------------------------------
+             
 8. References
 ==================
 | 1. ReStructuredText (RST) quick introduction grammar: 
