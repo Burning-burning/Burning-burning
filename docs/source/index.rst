@@ -1,4 +1,4 @@
-.. hello documentation master file, created by
+﻿.. hello documentation master file, created by
    sphinx-quickstart on Thu Apr 26 22:46:35 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -92,7 +92,9 @@ Group members:
 =============== =============== =============== ===============
    AT1G01010      1.198558083      2.036161827        0.76
 =============== =============== =============== ===============
-|
+|hjgdjhgkiuo
+ .. image:: /image/scatter_plot.png
+
 
 3. Non-functional requirements
 ==============================
@@ -145,15 +147,15 @@ Group members:
 | In order to make the software adapt to different users around the world, and to facilitate users to use their familiar browsers, the software must be compatible with the various browsers, that is, Firefox, Chrome, Safari, IE and so on.
 |
 4.2 Web Space
-===================
+--------------
 | When we design web applications, we have to consider web space. In a variety of factors, the web space of the software should not exceed the 1GB, not only convenient for the user to use this web application, but also to save a certain cost. On the other hand, it can provide more space for the users to analyze the data and identify the differential genes.
 |
 4.3 Budget
-===================
+----------------
 | Budget less than 10.000USD. Because financial resources, manpower and material resources are limited, if the budget exceeds the budget, then the project will be non-profitable, and there may still be in a loss.
 |
 4.4 System downtime
-====================
+----------------------
 | System downtime less than 30 minutes per year. Because too much system downtime will affect using, Greatly reducing the UE (user experience), thus reducing the rate of return.
 |
 5. Change cases

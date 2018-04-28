@@ -1,41 +1,571 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome to hello’s documentation! &#8212; hello [0.1] documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Software Requirements Specification for OMG Version 0.1 &mdash; hello [0.1] documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head><body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="#" class="icon icon-home"> hello
+          
+
+          
+          </a>
+
+          
             
-  <div class="section" id="welcome-to-hello-s-documentation">
-<h1>Welcome to hello’s documentation!<a class="headerlink" href="#welcome-to-hello-s-documentation" title="Permalink to this headline">¶</a></h1>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Software Requirements Specification for OMG Version 0.1</a></li>
+<li><a class="reference internal" href="#group-information">Group information</a><ul>
+<li><a class="reference internal" href="#group-name">Group name</a></li>
+<li><a class="reference internal" href="#group-members">Group members:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interoduction">1. Interoduction</a><ul>
+<li><a class="reference internal" href="#purpose">1.1 Purpose</a></li>
+<li><a class="reference internal" href="#overview">1.2 Overview</a></li>
+<li><a class="reference internal" href="#user-characteristics">1.3 User characteristics</a></li>
+<li><a class="reference internal" href="#conventions-acronyms-abbreviations-terminology-glossary">1.4 Conventions, acronyms, abbreviations, terminology, glossary</a><ul>
+<li><a class="reference internal" href="#conventions">1.4.1 Conventions</a></li>
+<li><a class="reference internal" href="#acronyms-abbreviations">1.4.2 Acronyms &amp; Abbreviations</a></li>
+<li><a class="reference internal" href="#terminology-glossary">1.4.3 Terminology &amp; Glossary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#functional-requirements">2. Functional requirements</a><ul>
+<li><a class="reference internal" href="#input">2.1 Input</a></li>
+<li><a class="reference internal" href="#output">2.2 Output</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#non-functional-requirements">3. Non-functional requirements</a><ul>
+<li><a class="reference internal" href="#response-time">3.1 Response time</a></li>
+<li><a class="reference internal" href="#aesthetic-aspects">3.2 Aesthetic aspects</a></li>
+<li><a class="reference internal" href="#confidentiality-policy">3.3 Confidentiality policy</a></li>
+<li><a class="reference internal" href="#availability">3.4 Availability</a><ul>
+<li><a class="reference internal" href="#always-consider-the-fault">3.4.1 Always consider the fault</a></li>
+<li><a class="reference internal" href="#always-consider-how-to-expand">3.4.2 Always consider how to expand</a></li>
+<li><a class="reference internal" href="#mitigate-risk">3.4.3 Mitigate risk</a></li>
+<li><a class="reference internal" href="#monitoring-availability">3.4.4 Monitoring availability</a></li>
+<li><a class="reference internal" href="#respond-to-usability-problems-in-a-predictive-and-determined-way">3.4.5 Respond to usability problems in a predictive and determined way.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#constraints">4. Constraints</a><ul>
+<li><a class="reference internal" href="#browser-compatibility">4.1 Browser compatibility</a></li>
+<li><a class="reference internal" href="#web-space">4.2 Web Space</a></li>
+<li><a class="reference internal" href="#budget">4.3 Budget</a></li>
+<li><a class="reference internal" href="#system-downtime">4.4 System downtime</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#change-cases">5. Change cases</a><ul>
+<li><a class="reference internal" href="#speed-up-recognition-rate">5.1 Speed up recognition rate</a></li>
+<li><a class="reference internal" href="#lifting-accuracy">5.2 Lifting accuracy</a></li>
+<li><a class="reference internal" href="#gene-therapy-plate">5.3 Gene therapy plate</a></li>
+<li><a class="reference internal" href="#extended-public-gene-bank">5.4 Extended public gene bank</a></li>
+<li><a class="reference internal" href="#private-gene-bank">5.5 Private gene bank</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#milestones">6. Milestones</a></li>
+<li><a class="reference internal" href="#appendices">7. Appendices</a></li>
+<li><a class="reference internal" href="#references">8. References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">hello</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Software Requirements Specification for OMG Version 0.1</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-requirements-specification-for-omg-version-0-1">
+<h1>Software Requirements Specification for OMG Version 0.1<a class="headerlink" href="#software-requirements-specification-for-omg-version-0-1" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="group-information">
+<h1>Group information<a class="headerlink" href="#group-information" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="group-name">
+<h2>Group name<a class="headerlink" href="#group-name" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Burning-burning</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="group-members">
+<h2>Group members:<a class="headerlink" href="#group-members" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">1. 石洪霞(Sherry 201632120113): <a class="reference external" href="mailto:1054689185&#37;&#52;&#48;qq&#46;com">1054689185<span>&#64;</span>qq<span>&#46;</span>com</a></div>
+<div class="line">2. 刘会翠(Sally 201632120111): <a class="reference external" href="mailto:572931147&#37;&#52;&#48;qq&#46;com">572931147<span>&#64;</span>qq<span>&#46;</span>com</a></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="interoduction">
+<h1>1. Interoduction<a class="headerlink" href="#interoduction" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">The purpose of this document is to identify differentially expressed genes by comparing different expressions of samples and processed samples, that is, “Oh My Genes”.</div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="purpose">
+<h2>1.1 Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Through our scientists uploading the gene expression file, identifying differentially expressed genes given a gene expression file containing two cell samples, quickly obtaining the differentially expressed genes and feedback the results to the scientists, so that scientists can better understand the mystery of gene expression.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="overview">
+<h2>1.2 Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">The web application has a simple interface with a single button [Upload and GO].  Our scientists upload a plain text file containing gene expression levels from two samples, representing two experimental conditions.  Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment.  If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="user-characteristics">
+<h2>1.3 User characteristics<a class="headerlink" href="#user-characteristics" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">end-users: Scientist who studies gene expression.</div>
+<div class="line">web site maintainers: Programer</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="conventions-acronyms-abbreviations-terminology-glossary">
+<h2>1.4 Conventions, acronyms, abbreviations, terminology, glossary<a class="headerlink" href="#conventions-acronyms-abbreviations-terminology-glossary" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">The purpose of this section is to introduce conventions, acronyms, abbreviations, terminology, glossary, it can help you get a better understanding of the project.</div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="conventions">
+<h3>1.4.1 Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Scientists must abide by the confidentiality agreement, not to be allowed to publicize the differential genes without permission, not to sell the research results illegally, and not to use the results of the research for illegal use, that is, to destroy human harmony and destroy social stability.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="acronyms-abbreviations">
+<h3>1.4.2 Acronyms &amp; Abbreviations<a class="headerlink" href="#acronyms-abbreviations" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">OMG - Oh My Genes, that is, the peroject name.</div>
+<div class="line">logFC - log fold change of gene expression.  log_2 [T/C], where T is the gene expression level from a treatment sample, while C is the gene expression level from a control sample.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="terminology-glossary">
+<h3>1.4.3 Terminology &amp; Glossary<a class="headerlink" href="#terminology-glossary" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Control sample - a cell sample prepared in its normal condition.</div>
+<div class="line">Treatment sample - a cell sample treated by special chemicals, or in which some genes are altered.</div>
+<div class="line">Differentially expressed genes - the genes which have significantly different expression levels between two samples.</div>
+<div class="line">Up-regulation - a gene is said to be up-regulated if it has higher expression in treatment than in control.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="functional-requirements">
+<h1>2. Functional requirements<a class="headerlink" href="#functional-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="input">
+<h2>2.1 Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">A valid submitted gene expression file has the following format.  It is a TAB-delimited, plain text file with three columns (see the attached file for a full example).  The file contains an optional head line, followed by each gene’s expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g., KnockOutSample).</div>
+<div class="line"><br /></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">gene_id</th>
+<th class="head">ControlSample</th>
+<th class="head">KnockOutSample</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>AT1G01010</td>
+<td>1.198558083</td>
+<td>2.036161827</td>
+</tr>
+<tr class="row-odd"><td>AT1G01020</td>
+<td>13.75736234</td>
+<td>13.370796</td>
+</tr>
+<tr class="row-even"><td>AT1G01030</td>
+<td>0.833779536</td>
+<td>0.203616183</td>
+</tr>
+<tr class="row-odd"><td>AT1G01040</td>
+<td>9.58846466</td>
+<td>7.126566394</td>
+</tr>
+<tr class="row-even"><td>AT1G01046</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>AT1G01050</td>
+<td>23.81482799</td>
+<td>21.10821094</td>
+</tr>
+<tr class="row-even"><td>AT1G01060</td>
+<td>0.625334652</td>
+<td>1.221697096</td>
+</tr>
+<tr class="row-odd"><td>AT1G01070</td>
+<td>1.719670292</td>
+<td>0.950208853</td>
+</tr>
+<tr class="row-even"><td>AT1G01080</td>
+<td>28.34850421</td>
+<td>25.24840665</td>
+</tr>
+<tr class="row-odd"><td>AT1G01090</td>
+<td>58.26034505</td>
+<td>42.96301455</td>
+</tr>
+<tr class="row-even"><td>AT1G01100</td>
+<td>1066.508249</td>
+<td>1308.030358</td>
+</tr>
+<tr class="row-odd"><td>AT1G01110</td>
+<td>2.709783491</td>
+<td>1.425313279</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="output">
+<h2>2.2 Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">The web application displays a table and a scatter plot given a gene expression file.</div>
+<div class="line"><br /></div>
+<div class="line">The table contains a list of differentially expressed genes with the following format:</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">gene_id</th>
+<th class="head">control_sample</th>
+<th class="head">treat_sample</th>
+<th class="head">log_2[FC]</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>AT1G01010</td>
+<td>1.198558083</td>
+<td>2.036161827</td>
+<td>0.76</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt><a href="#id1"><span class="problematic" id="id2">|</span></a>hjgdjhgkiuo</dt>
+<dd><img alt="_images/scatter_plot.png" class="first last" src="_images/scatter_plot.png" />
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="non-functional-requirements">
+<h1>3. Non-functional requirements<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">A non-behavioral requirement describes a technical feature of a system, features typically pertaining to availability, security, performance, interoperability, dependability, and reliability. Non-behavioral requirements are often referred to as “non-functional” requirements due to a bad naming decision made by the IEEE (as far as I’m concerned non-functional implies that it doesn’t work).</div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="response-time">
+<h2>3.1 Response time<a class="headerlink" href="#response-time" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">On the one hand, because the web application faces scientists all over the world, the number of users is more, and the requests for simultaneous processing are much more, so the response time must be reduced as much as possible. On the other hand, because a lot of data is huge, it needs to be analyzed for a long time, which will bring a poor user experience to the user, so our reaction time must be less than 5 seconds, which is an optimal reaction time.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="aesthetic-aspects">
+<h2>3.2 Aesthetic aspects<a class="headerlink" href="#aesthetic-aspects" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Because this web application faces scientists all over the world, the interface must be internationalized, and it can support various languages such as English, Chinese, Korean and so on. Because this web application is the data analysis, so the interface as simple as possible, give scientists a rigorous style, so that the product is trustworthy. Since this web application is mainly fed by tables and scatter plots, the tables and scatter plots must be as clear as possible to make the data more explicit.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="confidentiality-policy">
+<h2>3.3 Confidentiality policy<a class="headerlink" href="#confidentiality-policy" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Ensuring the safety of the gene library is an integral part of our web application, and we must unconditionally guarantee the security of the user’s data, as well as the results of each experiment. Most importantly, our web application serves scientists all over the world, so it requires more security and no data is leaked.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="availability">
+<h2>3.4 Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="always-consider-the-fault">
+<h3>3.4.1 Always consider the fault<a class="headerlink" href="#always-consider-the-fault" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The web application will always consider the response to the fault. For example, capturing the underlying exception, retrying logic, and circuit breakers, the circuit breaker mode is very useful in handling dependent failures, because they can reduce the impact of dependent failures on the system.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="always-consider-how-to-expand">
+<h3>3.4.2 Always consider how to expand<a class="headerlink" href="#always-consider-how-to-expand" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The web application will always consider how to expand. The system can now function properly, which does not mean that it will continue to operate properly tomorrow.The flow of most Web applications is increasing. A website that generates a certain amount of traffic today may produce much larger traffic than we think tomorrow.When we build the system, we will take into account future traffic. When most of the contents in the navigation bar are static content, we can dynamically add the change content to the page in the user’s browser. By grouping these dynamic data and differentiating with static content, the performance of Web pages can be improved and the dynamic data amount needed to be processed by the application is reduced. This improves scalability and ultimately improves availability.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="mitigate-risk">
+<h3>3.4.3 Mitigate risk<a class="headerlink" href="#mitigate-risk" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The web application will always mitigate risk. When the system fails, we have identified the cause of the failure for risk before that. When the system becomes more and more complex, eliminating all risks is becoming more and more impossible. More of what we do is to manage the risks of the system, know what these risks are, which risks are acceptable, and what we can do to mitigate the risks.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="monitoring-availability">
+<h3>3.4.4 Monitoring availability<a class="headerlink" href="#monitoring-availability" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">1. Monitor the health of the server and ensure that they are always running effectively.</div>
+<div class="line">2. Monitor the configuration changes of the system to determine their impact on the application.</div>
+<div class="line">3. In depth understanding of applications and services to ensure that they are running as expected.</div>
+<div class="line">4. From the perspective of users, we can detect the running of applications in real time so as to find them before users really find problems.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="respond-to-usability-problems-in-a-predictive-and-determined-way">
+<h3>3.4.5 Respond to usability problems in a predictive and determined way.<a class="headerlink" href="#respond-to-usability-problems-in-a-predictive-and-determined-way" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">When our web applications are faced with more and more users’ needs and become more and more complex. Preparing for dealing with usability problems ahead of time is the best way to reduce the probability and severity of problems.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="constraints">
+<h1>4. Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">The software is based on gene research, at the same time, some constraints must be considered in order to make the software more reasonable and reduce the cost.</div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="browser-compatibility">
+<h2>4.1 Browser compatibility<a class="headerlink" href="#browser-compatibility" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">In order to make the software adapt to different users around the world, and to facilitate users to use their familiar browsers, the software must be compatible with the various browsers, that is, Firefox, Chrome, Safari, IE and so on.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="web-space">
+<h2>4.2 Web Space<a class="headerlink" href="#web-space" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">When we design web applications, we have to consider web space. In a variety of factors, the web space of the software should not exceed the 1GB, not only convenient for the user to use this web application, but also to save a certain cost. On the other hand, it can provide more space for the users to analyze the data and identify the differential genes.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="budget">
+<h2>4.3 Budget<a class="headerlink" href="#budget" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Budget less than 10.000USD. Because financial resources, manpower and material resources are limited, if the budget exceeds the budget, then the project will be non-profitable, and there may still be in a loss.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="system-downtime">
+<h2>4.4 System downtime<a class="headerlink" href="#system-downtime" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">System downtime less than 30 minutes per year. Because too much system downtime will affect using, Greatly reducing the UE (user experience), thus reducing the rate of return.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="change-cases">
+<h1>5. Change cases<a class="headerlink" href="#change-cases" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">From speeding up recognition rate, Lifting accuracy, providing gene therapy plate, extending public gene bank, and providing private gene bank, we can improve the project.</div>
+</div>
+<div class="section" id="speed-up-recognition-rate">
+<h2>5.1 Speed up recognition rate<a class="headerlink" href="#speed-up-recognition-rate" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Identifying different genes reacts more quickly, saving scientists time, improving product efficiency and providing users with a better user experience.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="lifting-accuracy">
+<h2>5.2 Lifting accuracy<a class="headerlink" href="#lifting-accuracy" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">The result is more precise and effective, reducing the number of repeated experiments, not only enhancing the reliability of products, but also enhancing the competitiveness of the industry.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gene-therapy-plate">
+<h2>5.3 Gene therapy plate<a class="headerlink" href="#gene-therapy-plate" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">In this web application, adding more plates to the genes, such as gene therapy, the identification of differential genes is used to search for a sequence of replacement genes that are more suitable for target cells, which makes it convenient for gene therapy, and our users can expand from scientists around the world to medical researchers, which can be said to be the gospel of human beings and a great leap in the field of gene therapy. This web application not only reduces the cost of gene therapy, but also improves the success rate of gene therapy.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="extended-public-gene-bank">
+<h2>5.4 Extended public gene bank<a class="headerlink" href="#extended-public-gene-bank" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">The identification of differential genes is used to search for a sequence of replacement genes that are more suitable for target cells, which makes it convenient for gene therapy, and our users can expand from scientists around the world to medical researchers, which can be said to be the gospel of human beings and a great leap in the field of gene therapy. This web application not only reduces the cost of gene therapy, but also improves the success rate of gene therapy.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="private-gene-bank">
+<h2>5.5 Private gene bank<a class="headerlink" href="#private-gene-bank" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Users can add the different genes they have been looking for into their own private gene banks, and the private gene bank can list the generality and characteristics of the different genes that have been found, and more convenient for the user to study. Allowing users to register members not only enables users to get more storage space, but also has higher return on our projects.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="milestones">
+<h1>6. Milestones<a class="headerlink" href="#milestones" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Submit SRS for review by May 1st.</div>
+<div class="line">Get SRS approved by May 8th.</div>
+<div class="line">Get design done by May 10th.</div>
+<div class="line">Get coding done by May 24th.</div>
+<div class="line">Acceptance tests by June 1st.</div>
+<div class="line">Release by June 15th.</div>
+</div>
+</div>
+<div class="section" id="appendices">
+<h1>7. Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="references">
+<h1>8. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">1. ReStructuredText (RST) quick introduction grammar:
+<a class="reference external" href="https://www.cnblogs.com/seayxu/p/5603876.html">https://www.cnblogs.com/seayxu/p/5603876.html</a></div>
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
@@ -44,60 +574,64 @@
 </div>
 
 
+           </div>
+           
           </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Burning-burning.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Welcome to hello’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2018, Burning-burning.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
-    
-  </body>
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'[0.1]',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
 </html>
