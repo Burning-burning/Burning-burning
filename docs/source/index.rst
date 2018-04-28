@@ -97,7 +97,6 @@ Group members:
 |
 2.2.2 Scatter plot
 >>>>>>>>>>>>>>>>>>>>>
-| The scatter plot displays differentially expressed genes.  The X-axis is Control, and Y-axis is Treatment
  .. image:: /image/scatter_plot.png
 
 
