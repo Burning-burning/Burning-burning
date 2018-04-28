@@ -85,6 +85,7 @@ Group members:
 2.2 Output
 -----------------------
 | The web application displays a table and a scatter plot given a gene expression file.
+|
 | The table contains a list of differentially expressed genes with the following format:
 =============== =============== =============== ===============
     gene_id      control_sample   treat_sample      log_2[FC]
